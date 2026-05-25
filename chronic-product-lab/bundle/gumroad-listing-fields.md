@@ -20,6 +20,7 @@ Manual Gumroad entry progress:
 - Gumroad showed `Saved!` after saving changes.
 - User previewed the product page and approved the visible preview.
 - User clicked `Publish and continue`, but Gumroad blocked publishing because at least one payment method must be connected first.
+- User later reported Gumroad said payment setup was all set.
 - Product has not been published.
 
 ## Product Type

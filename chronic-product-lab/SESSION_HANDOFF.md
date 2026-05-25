@@ -110,6 +110,7 @@ Gumroad status:
 - Gumroad showed `Saved!` after saving changes.
 - User previewed the product page and approved the visible preview.
 - User clicked `Publish and continue`, but Gumroad blocked publishing because at least one payment method must be connected first.
+- User later reported Gumroad said payment setup was all set.
 - Product should remain unpublished until the user explicitly approves the final live listing.
 - Gumroad draft process is saved in `chronic-product-lab/bundle/gumroad-draft-playbook.md`.
 
@@ -138,7 +139,7 @@ Seller-facing files such as listing copy, mockups, manifests, and readiness note
 
 ## Recommended Next Step
 
-Human-only step: connect a Gumroad payment provider if the user wants to continue toward publishing. After that, return to the saved Gumroad draft for a final preview check before publishing.
+Return to the saved Gumroad draft for one final preview check before publishing.
 
 Do not publish anything or use PaperclipAI unless the user explicitly approves that phase.
 

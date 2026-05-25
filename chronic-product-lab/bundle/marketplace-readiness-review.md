@@ -66,6 +66,7 @@ Completed after this review:
 - Gumroad listing fields drafted at `gumroad-listing-fields.md`.
 - Manual Gumroad draft saved with buyer ZIP uploaded.
 - Gumroad publish attempt was blocked because no payment method is connected.
+- User later reported Gumroad said payment setup was all set.
 - Gumroad draft process saved at `gumroad-draft-playbook.md`.
 
 ## Safety Notes
@@ -94,7 +95,7 @@ Choose whether to prepare a platform-specific sales test package.
 
 Possible next local-only tasks:
 
-1. Connect a Gumroad payment method if the user wants to continue toward publishing.
-2. Return to the saved draft and run one final preview check before publishing.
+1. Return to the saved draft and run one final preview check before publishing.
+2. Publish only after the user explicitly approves the final live listing.
 
 Do not publish, create accounts, or use PaperclipAI unless the user explicitly approves that phase.
