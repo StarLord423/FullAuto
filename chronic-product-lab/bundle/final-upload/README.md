@@ -30,8 +30,7 @@ chronic-product-lab/bundle/final-upload/migraine-printable-bundle/
 
 ## Notes
 
-- This package is local only.
-- No marketplace publishing has been approved.
-- No account creation has been approved.
+- This is the buyer-facing package used for the Gumroad listing.
+- Gumroad product is live at `https://3010107719883.gumroad.com/l/migraine-printable-bundle`.
 - No PaperclipAI automation has been approved.
 - Seller-facing files such as listing copy, mockups, manifest, and readiness review remain outside the buyer ZIP.

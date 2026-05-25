@@ -96,7 +96,7 @@ Mockup status:
 Marketplace-readiness status:
 
 - `chronic-product-lab/bundle/marketplace-readiness-review.md` is complete.
-- Verdict: ready for a supervised marketplace-readiness decision, but not approved for publishing.
+- Verdict: passed supervised marketplace-readiness review and published on Gumroad.
 - Buyer-facing upload ZIP is complete at `chronic-product-lab/bundle/final-upload/migraine-printable-bundle.zip`.
 - User unzipped and reviewed the buyer package, then said it looks good.
 - Remaining decisions: platform, price, and support/refund notes.
