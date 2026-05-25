@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Migraine Daily Symptom Tracker</title>
+  <style>
+    :root {
+      --ink: #202020;
+      --soft-ink: #4a4a4a;
+      --rule: #2f2f2f;
+      --light-rule: #767676;
+      --wash: #f2f2f2;
+      --pale: #fafafa;
+    }
+
+    @page {
+      size: letter;
+      margin: 0.3in;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10.4px;
+      line-height: 1.25;
+      background: #ffffff;
+    }
+
+    .sheet {
+      width: 100%;
+      height: 10.35in;
+      border: 1.25px solid var(--ink);
+      padding: 0.17in;
+      overflow: hidden;
+      page-break-after: always;
+      break-after: page;
+    }
+
+    .sheet:last-child {
+      page-break-after: auto;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: 1.15fr 1fr;
+      gap: 0.16in;
+      padding: 0 0 0.095in;
+      border-bottom: 1.7px solid var(--ink);
+      margin-bottom: 0.1in;
+    }
+
+    h1 {
+      margin: 0 0 0.05in;
+      font-size: 21px;
+      line-height: 1;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin: -0.075in -0.075in 0.07in;
+      padding: 0.045in 0.07in 0.04in;
+      border-bottom: 1px solid var(--rule);
+      background: var(--wash);
+      font-size: 11.5px;
+      line-height: 1;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    .subtitle {
+      max-width: 4.8in;
+      color: var(--soft-ink);
+      font-size: 10px;
+    }
+
+    .top-fields {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.075in;
+      align-content: start;
+    }
+
+    .field {
+      min-height: 0.3in;
+      border-bottom: 1px solid var(--rule);
+      padding: 0.02in 0.025in 0;
+      color: var(--soft-ink);
+      font-size: 9.3px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.11in;
+    }
+
+    .three-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 0.09in;
+    }
+
+    .stack {
+      display: grid;
+      gap: 0.08in;
+    }
+
+    section {
+      border: 1px solid var(--rule);
+      padding: 0.075in;
+      margin-bottom: 0.085in;
+      break-inside: avoid;
+      background: var(--pale);
+    }
+
+    .checks {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.045in 0.08in;
+    }
+
+    .checks.three {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .check {
+      white-space: nowrap;
+    }
+
+    strong {
+      color: var(--ink);
+      font-size: 9.7px;
+    }
+
+    .box {
+      display: inline-block;
+      width: 0.12in;
+      height: 0.12in;
+      border: 1px solid var(--rule);
+      margin-right: 0.035in;
+      vertical-align: -1px;
+      background: #ffffff;
+    }
+
+    .scale {
+      display: grid;
+      grid-template-columns: repeat(11, 1fr);
+      gap: 0.035in;
+      margin-top: 0.055in;
+    }
+
+    .scale div {
+      min-height: 0.27in;
+      border: 1px solid var(--rule);
+      padding-top: 0.065in;
+      text-align: center;
+      font-size: 9.5px;
+      background: #ffffff;
+    }
+
+    .line {
+      min-height: 0.24in;
+      border-bottom: 1px solid var(--light-rule);
+      margin-top: 0.045in;
+      color: var(--soft-ink);
+    }
+
+    .large-line {
+      min-height: 0.42in;
+    }
+
+    .xl-line {
+      min-height: 0.72in;
+    }
+
+    .note {
+      margin-top: 0.04in;
+      color: var(--soft-ink);
+      font-size: 8.5px;
+    }
+
+    .footer {
+      border-top: 1px solid var(--rule);
+      padding-top: 0.055in;
+      color: var(--soft-ink);
+      font-size: 8.8px;
+      line-height: 1.25;
+    }
+
+    .page-label {
+      margin-top: 0.04in;
+      color: #555;
+      font-size: 8.5px;
+      text-align: right;
+    }
+
+    @media print {
+      body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article class="sheet">
+      <header>
+        <div>
+          <h1>Migraine Daily Symptom Tracker</h1>
+          <div class="subtitle">
+            Quick attack log for symptoms, aura, possible context, relief notes, and what to bring up with your healthcare provider. These notes are for pattern spotting, not self-blame.
+          </div>
+        </div>
+        <div class="top-fields">
+          <div class="field">Date:</div>
+          <div class="field">Day:</div>
+          <div class="field">Start time:</div>
+          <div class="field">End time:</div>
+          <div class="field">Total duration:</div>
+          <div class="field">Missed work/school/other:</div>
+        </div>
+      </header>
+
+      <section>
+        <h2>Pain & Attack Basics</h2>
+        <div class="three-grid">
+          <div>
+            <strong>Pain location</strong>
+            <div class="checks">
+              <div class="check"><span class="box"></span>Left</div>
+              <div class="check"><span class="box"></span>Right</div>
+              <div class="check"><span class="box"></span>Both</div>
+              <div class="check"><span class="box"></span>Forehead</div>
+              <div class="check"><span class="box"></span>Temple</div>
+              <div class="check"><span class="box"></span>Behind eye</div>
+              <div class="check"><span class="box"></span>Back of head</div>
+              <div class="check"><span class="box"></span>Neck</div>
+            </div>
+          </div>
+          <div>
+            <strong>Pain quality</strong>
+            <div class="checks">
+              <div class="check"><span class="box"></span>Throbbing</div>
+              <div class="check"><span class="box"></span>Pulsing</div>
+              <div class="check"><span class="box"></span>Pressure</div>
+              <div class="check"><span class="box"></span>Stabbing</div>
+              <div class="check"><span class="box"></span>Burning</div>
+              <div class="check"><span class="box"></span>Tight</div>
+            </div>
+          </div>
+          <div>
+            <strong>Phase clues</strong>
+            <div class="checks">
+              <div class="check"><span class="box"></span>Prodrome</div>
+              <div class="check"><span class="box"></span>Aura</div>
+              <div class="check"><span class="box"></span>Headache</div>
+              <div class="check"><span class="box"></span>Postdrome</div>
+              <div class="check"><span class="box"></span>Unsure</div>
+            </div>
+          </div>
+        </div>
+        <strong>Pain intensity: 0 = none, 10 = worst</strong>
+        <div class="scale">
+          <div>0</div><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>10</div>
+        </div>
+      </section>
+
+      <div class="grid">
+        <section>
+          <h2>Aura & Neurological Symptoms</h2>
+          <div class="checks">
+            <div class="check"><span class="box"></span>Flashing lights</div>
+            <div class="check"><span class="box"></span>Zigzags</div>
+            <div class="check"><span class="box"></span>Blind spots</div>
+            <div class="check"><span class="box"></span>Blurred vision</div>
+            <div class="check"><span class="box"></span>Tingling/numbness</div>
+            <div class="check"><span class="box"></span>Dizziness/vertigo</div>
+            <div class="check"><span class="box"></span>Speech trouble</div>
+            <div class="check"><span class="box"></span>Brain fog</div>
+          </div>
+          <div class="line">Other aura notes:</div>
+        </section>
+
+        <section>
+          <h2>Associated Symptoms</h2>
+          <div class="checks">
+            <div class="check"><span class="box"></span>Nausea</div>
+            <div class="check"><span class="box"></span>Vomiting</div>
+            <div class="check"><span class="box"></span>Light sensitivity</div>
+            <div class="check"><span class="box"></span>Sound sensitivity</div>
+            <div class="check"><span class="box"></span>Smell sensitivity</div>
+            <div class="check"><span class="box"></span>Neck pain</div>
+            <div class="check"><span class="box"></span>Fatigue</div>
+            <div class="check"><span class="box"></span>Food craving</div>
+            <div class="check"><span class="box"></span>Chills/sweats</div>
+            <div class="check"><span class="box"></span>Migraine hangover</div>
+          </div>
+        </section>
+      </div>
+
+      <section>
+        <h2>Possible Context Around This Attack</h2>
+        <div class="checks three">
+          <div class="check"><span class="box"></span>Sleep change</div>
+          <div class="check"><span class="box"></span>Missed/delayed meal</div>
+          <div class="check"><span class="box"></span>Hydration low</div>
+          <div class="check"><span class="box"></span>Caffeine change</div>
+          <div class="check"><span class="box"></span>Alcohol</div>
+          <div class="check"><span class="box"></span>Stress/letdown</div>
+          <div class="check"><span class="box"></span>Bright light/screens</div>
+          <div class="check"><span class="box"></span>Strong smells</div>
+          <div class="check"><span class="box"></span>Loud sound</div>
+          <div class="check"><span class="box"></span>Weather/pressure</div>
+          <div class="check"><span class="box"></span>Cycle/hormonal timing</div>
+          <div class="check"><span class="box"></span>Travel/schedule change</div>
+        </div>
+        <div class="three-grid" style="margin-top:0.075in;">
+          <div class="field">Sleep last night:</div>
+          <div class="field">Food/caffeine notes:</div>
+          <div class="field">Weather notes:</div>
+        </div>
+      </section>
+
+      <div class="grid">
+        <section>
+          <h2>Medication / Support Used</h2>
+          <div class="line">What I used and when:</div>
+          <div class="line">Relief began around:</div>
+          <div class="line">Side effects or notes:</div>
+          <div class="note">Record what happened. Do not change medications or care decisions based on this page alone.</div>
+        </section>
+
+        <section>
+          <h2>Relief & Impact</h2>
+          <div class="grid">
+            <div>
+              <strong>Relief level</strong>
+              <div class="checks">
+                <div class="check"><span class="box"></span>None</div>
+                <div class="check"><span class="box"></span>Partial</div>
+                <div class="check"><span class="box"></span>Mostly</div>
+                <div class="check"><span class="box"></span>Full</div>
+              </div>
+            </div>
+            <div>
+              <strong>Impact</strong>
+              <div class="checks">
+                <div class="check"><span class="box"></span>Rested only</div>
+                <div class="check"><span class="box"></span>Reduced tasks</div>
+                <div class="check"><span class="box"></span>Missed plans</div>
+                <div class="check"><span class="box"></span>Needed help</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section>
+        <h2>Quick Notes to Share With My Healthcare Provider</h2>
+        <div class="line large-line">What felt different, new, severe, or especially disruptive?</div>
+        <div class="line large-line">Questions I want to ask next time:</div>
+      </section>
+
+      <div class="footer">
+        This printable is a personal tracking and organization tool. It is not medical advice, diagnosis, or treatment. Always talk with a qualified healthcare professional about symptoms, medications, or care decisions. If symptoms feel new, severe, sudden, or concerning, contact a qualified healthcare professional or emergency services.
+      </div>
+      <div class="page-label">Page 1 of 2 - Quick attack log</div>
+    </article>
+
+    <article class="sheet">
+      <header>
+        <div>
+          <h1>Expanded Migraine Notes</h1>
+          <div class="subtitle">
+            Use this page when you want more room for details before an appointment. Skip anything that is not useful today.
+          </div>
+        </div>
+        <div class="top-fields">
+          <div class="field">Date:</div>
+          <div class="field">Attack number or label:</div>
+          <div class="field">Provider/appointment:</div>
+          <div class="field">Next appointment date:</div>
+        </div>
+      </header>
+
+      <section>
+        <h2>Before the Attack</h2>
+        <div class="stack">
+          <div class="line xl-line">Sleep, meals, hydration, caffeine, stress, schedule, weather, cycle timing, or sensory exposure:</div>
+          <div class="line xl-line">Anything that may have been part of the migraine starting rather than a clear trigger:</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>During the Attack</h2>
+        <div class="grid">
+          <div class="line large-line">Symptoms that were hardest to handle:</div>
+          <div class="line large-line">What I had to stop, cancel, reduce, or ask for help with:</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Medication, Support, and Relief Details</h2>
+        <div class="three-grid">
+          <div class="field">Medication/support:</div>
+          <div class="field">Time used:</div>
+          <div class="field">Relief level or notes:</div>
+          <div class="field">Second step, if any:</div>
+          <div class="field">Time used:</div>
+          <div class="field">Side effects or concerns:</div>
+        </div>
+        <div class="note">Use this page to record details for discussion. Do not change medications or care decisions based on this printable alone.</div>
+      </section>
+
+      <section>
+        <h2>Appointment Prep</h2>
+        <div class="line large-line">Patterns I am noticing across attacks:</div>
+        <div class="line large-line">What I want help understanding:</div>
+        <div class="line large-line">Questions I want to ask:</div>
+      </section>
+
+      <section>
+        <h2>Free Notes</h2>
+        <div class="line large-line"></div>
+        <div class="line large-line"></div>
+        <div class="line large-line"></div>
+      </section>
+
+      <div class="footer">
+        This printable is a personal tracking and organization tool. It is not medical advice, diagnosis, or treatment. Always talk with a qualified healthcare professional about symptoms, medications, or care decisions. If symptoms feel new, severe, sudden, or concerning, contact a qualified healthcare professional or emergency services.
+      </div>
+      <div class="page-label">Page 2 of 2 - Expanded notes</div>
+    </article>
+  </main>
+</body>
+</html>

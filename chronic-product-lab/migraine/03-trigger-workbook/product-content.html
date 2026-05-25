@@ -1,0 +1,817 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Migraine Pattern Workbook</title>
+  <style>
+    :root {
+      --ink: #202020;
+      --soft-ink: #4a4a4a;
+      --rule: #303030;
+      --light-rule: #767676;
+      --wash: #f2f2f2;
+      --pale: #fafafa;
+    }
+
+    @page {
+      size: letter;
+      margin: 0.32in;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10.2px;
+      line-height: 1.24;
+      background: #ffffff;
+    }
+
+    .sheet {
+      width: 100%;
+      height: 9.65in;
+      border: 1.25px solid var(--ink);
+      padding: 0.165in;
+      overflow: hidden;
+      page-break-after: always;
+      break-after: page;
+    }
+
+    .sheet:last-child {
+      page-break-after: auto;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 0.15in;
+      padding-bottom: 0.085in;
+      border-bottom: 1.7px solid var(--ink);
+      margin-bottom: 0.09in;
+    }
+
+    h1 {
+      margin: 0 0 0.045in;
+      font-size: 20px;
+      line-height: 1;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin: -0.072in -0.072in 0.065in;
+      padding: 0.044in 0.07in 0.038in;
+      border-bottom: 1px solid var(--rule);
+      background: var(--wash);
+      font-size: 11.1px;
+      line-height: 1;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      margin: 0 0 0.04in;
+      font-size: 10.5px;
+      line-height: 1.05;
+    }
+
+    .subtitle {
+      max-width: 5in;
+      color: var(--soft-ink);
+      font-size: 9.4px;
+    }
+
+    .top-fields {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.065in;
+      align-content: start;
+    }
+
+    .field {
+      min-height: 0.28in;
+      border-bottom: 1px solid var(--rule);
+      padding: 0.02in 0.025in 0;
+      color: var(--soft-ink);
+      font-size: 9.1px;
+    }
+
+    section {
+      border: 1px solid var(--rule);
+      padding: 0.072in;
+      margin-bottom: 0.08in;
+      break-inside: avoid;
+      background: var(--pale);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.1in;
+    }
+
+    .three-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 0.075in;
+    }
+
+    .four-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.06in;
+    }
+
+    .checks {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.042in 0.07in;
+    }
+
+    .checks.three {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .check {
+      white-space: nowrap;
+    }
+
+    .box {
+      display: inline-block;
+      width: 0.115in;
+      height: 0.115in;
+      border: 1px solid var(--rule);
+      margin-right: 0.035in;
+      vertical-align: -1px;
+      background: #ffffff;
+    }
+
+    .line {
+      min-height: 0.24in;
+      border-bottom: 1px solid var(--light-rule);
+      margin-top: 0.04in;
+      color: var(--soft-ink);
+    }
+
+    .large-line {
+      min-height: 0.82in;
+    }
+
+    .xl-line {
+      min-height: 1.4in;
+    }
+
+    .fill-line {
+      min-height: 1.08in;
+    }
+
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    .table th,
+    .table td {
+      border: 1px solid var(--rule);
+      height: 0.62in;
+      padding: 0.035in;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .table th {
+      background: var(--wash);
+      font-size: 8.8px;
+      text-transform: uppercase;
+    }
+
+    .note {
+      margin-top: 0.04in;
+      color: var(--soft-ink);
+      font-size: 8.4px;
+    }
+
+    .footer {
+      border-top: 1px solid var(--rule);
+      padding-top: 0.05in;
+      color: var(--soft-ink);
+      font-size: 8.4px;
+      line-height: 1.22;
+    }
+
+    .page-label {
+      margin-top: 0.035in;
+      color: #555;
+      font-size: 8.3px;
+      text-align: right;
+    }
+
+    @media print {
+      body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article class="sheet">
+      <header>
+        <div>
+          <h1>Migraine Pattern Workbook</h1>
+          <div class="subtitle">
+            A printable workbook for organizing possible context around migraine attacks, reviewing patterns, and preparing clearer notes for a healthcare provider.
+          </div>
+        </div>
+        <div class="top-fields">
+          <div class="field">Name:</div>
+          <div class="field">Date started:</div>
+          <div class="field">Tracking period:</div>
+          <div class="field">Provider / appointment:</div>
+          <div class="field">Date completed:</div>
+          <div class="field">Next appointment:</div>
+        </div>
+      </header>
+
+      <section>
+        <h2>How to Use This Workbook</h2>
+        <div class="grid">
+          <div class="line large-line">Use this to collect clues, not to prove one cause. Some attacks may not have an obvious pattern.</div>
+          <div class="line large-line">Fill in the pages that match your life. Write "unknown" or "not sure" when exact details are hard.</div>
+          <div class="line large-line">Review several entries together before drawing conclusions. Multiple small factors may stack together.</div>
+          <div class="line large-line">Bring the pattern review page to your healthcare provider if it helps the conversation.</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>This Is Not About Blame</h2>
+        <div class="line large-line">Possible context I want to understand without blaming myself:</div>
+        <div class="line large-line">What I hope this workbook helps me explain:</div>
+      </section>
+
+      <section>
+        <h2>Quick Start</h2>
+        <div class="checks three">
+          <div class="check"><span class="box"></span>Track attacks</div>
+          <div class="check"><span class="box"></span>Track possible context</div>
+          <div class="check"><span class="box"></span>Review patterns</div>
+          <div class="check"><span class="box"></span>Mark no clear pattern</div>
+          <div class="check"><span class="box"></span>Write questions</div>
+          <div class="check"><span class="box"></span>Discuss with provider</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Before I Start</h2>
+        <div class="grid">
+          <div class="line fill-line">What I already suspect may be part of my pattern:</div>
+          <div class="line fill-line">What I want to stop guessing about:</div>
+        </div>
+      </section>
+
+      <div class="footer">
+        This printable is a personal tracking and organization tool. It is not medical advice, diagnosis, or treatment. Always talk with a qualified healthcare professional about symptoms, medications, or care decisions. This workbook cannot prove what caused an attack or tell you what changes to make.
+      </div>
+      <div class="page-label">Page 1 of 10 - How to use</div>
+    </article>
+
+    <article class="sheet">
+      <header>
+        <div>
+          <h1>Possible Context Overview</h1>
+          <div class="subtitle">Use these categories as prompts. A possible trigger might also be an early migraine clue, and some patterns may stay unclear.</div>
+        </div>
+        <div class="top-fields">
+          <div class="field">Tracking period:</div>
+          <div class="field">Updated on:</div>
+          <div class="field">Most useful category so far:</div>
+          <div class="field">No clear pattern notes:</div>
+        </div>
+      </header>
+
+      <section>
+        <h2>Context Categories</h2>
+        <div class="checks three">
+          <div class="check"><span class="box"></span>Sleep</div>
+          <div class="check"><span class="box"></span>Schedule</div>
+          <div class="check"><span class="box"></span>Meals</div>
+          <div class="check"><span class="box"></span>Hydration</div>
+          <div class="check"><span class="box"></span>Caffeine</div>
+          <div class="check"><span class="box"></span>Alcohol</div>
+          <div class="check"><span class="box"></span>Stress</div>
+          <div class="check"><span class="box"></span>Letdown</div>
+          <div class="check"><span class="box"></span>Bright light/screens</div>
+          <div class="check"><span class="box"></span>Smells/sounds</div>
+          <div class="check"><span class="box"></span>Weather/environment</div>
+          <div class="check"><span class="box"></span>Cycle/body context</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Context, Possible Trigger, or Early Migraine Clue?</h2>
+        <div class="three-grid">
+          <div class="line xl-line">Context I noticed around attacks:</div>
+          <div class="line xl-line">Things that may happen before migraine starts:</div>
+          <div class="line xl-line">Things I cannot control or avoid:</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Useful Uncertainty</h2>
+        <div class="grid">
+          <div class="line large-line">Patterns I am unsure about:</div>
+          <div class="line large-line">Things that did not match attacks as clearly as I expected:</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Category Notes to Compare Later</h2>
+        <div class="grid">
+          <div class="line xl-line">Categories I want to watch for a few entries before deciding whether they matter:</div>
+          <div class="line xl-line">Categories that may be unavoidable but still useful to document:</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Notes to Bring Forward</h2>
+        <div class="grid">
+          <div class="line large-line">Category I want to pay attention to next:</div>
+          <div class="line large-line">What would make this easier to track:</div>
+        </div>
+      </section>
+
+      <div class="footer">
+        Possible context is not the same as a confirmed cause. Use these notes to support a conversation with a qualified healthcare professional.
+      </div>
+      <div class="page-label">Page 2 of 10 - Category overview</div>
+    </article>
+
+    <article class="sheet">
+      <header>
+        <div>
+          <h1>Migraine Attack Log</h1>
+          <div class="subtitle">Record one attack or migraine day. Keep it brief if symptoms make writing difficult.</div>
+        </div>
+        <div class="top-fields">
+          <div class="field">Date:</div>
+          <div class="field">Day:</div>
+          <div class="field">Start time:</div>
+          <div class="field">End time:</div>
+          <div class="field">Duration:</div>
+          <div class="field">Pain intensity 0-10:</div>
+        </div>
+      </header>
+
+      <section>
+        <h2>Symptoms and Phase Clues</h2>
+        <div class="checks three">
+          <div class="check"><span class="box"></span>Prodrome</div>
+          <div class="check"><span class="box"></span>Aura</div>
+          <div class="check"><span class="box"></span>Headache</div>
+          <div class="check"><span class="box"></span>Postdrome</div>
+          <div class="check"><span class="box"></span>Nausea</div>
+          <div class="check"><span class="box"></span>Vomiting</div>
+          <div class="check"><span class="box"></span>Light sensitivity</div>
+          <div class="check"><span class="box"></span>Sound sensitivity</div>
+          <div class="check"><span class="box"></span>Smell sensitivity</div>
+          <div class="check"><span class="box"></span>Brain fog</div>
+          <div class="check"><span class="box"></span>Dizziness/vertigo</div>
+          <div class="check"><span class="box"></span>Migraine hangover</div>
+        </div>
+        <div class="line large-line">Aura, neurological symptoms, or what felt different:</div>
+      </section>
+
+      <section>
+        <h2>What Was Happening Around This Attack?</h2>
+        <div class="grid">
+          <div class="line fill-line">Sleep, schedule, meals, hydration, caffeine, alcohol:</div>
+          <div class="line fill-line">Stress, letdown, sensory exposure, weather, cycle/body context:</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Support, Relief, and Impact</h2>
+        <div class="three-grid">
+          <div class="line large-line">Medication/support used and when:</div>
+          <div class="line large-line">Relief level or notes:</div>
+          <div class="line large-line">Work, school, caregiving, plans, or daily tasks affected:</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>After the Attack</h2>
+        <div class="grid">
+          <div class="line fill-line">Migraine hangover, recovery time, or next-day effects:</div>
+          <div class="line fill-line">What I want to remember for pattern review:</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Compare With Other Attacks</h2>
+        <div class="grid">
+          <div class="line large-line">What was similar to past attacks:</div>
+          <div class="line large-line">What was different this time:</div>
+        </div>
+      </section>
+
+      <div class="footer">
+        Record what happened. Do not change medications, diet, or care decisions based on this page alone.
+      </div>
+      <div class="page-label">Page 3 of 10 - Attack log</div>
+    </article>
+
+    <article class="sheet">
+      <header>
+        <div>
+          <h1>Sleep & Schedule Log</h1>
+          <div class="subtitle">Track sleep and schedule context without assuming it caused an attack.</div>
+        </div>
+        <div class="top-fields">
+          <div class="field">Date range:</div>
+          <div class="field">Usual schedule:</div>
+          <div class="field">Most disrupted day:</div>
+          <div class="field">Attack days in this period:</div>
+        </div>
+      </header>
+
+      <section>
+        <h2>Sleep and Schedule Notes</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Bed / wake</th>
+              <th>Sleep quality</th>
+              <th>Schedule change</th>
+              <th>Migraine notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Patterns to Review</h2>
+        <div class="grid">
+          <div class="line fill-line">Too little sleep, too much sleep, or irregular sleep:</div>
+          <div class="line fill-line">Travel, shift changes, weekend changes, or busy-day letdown:</div>
+          <div class="line fill-line">What showed up more than once:</div>
+          <div class="line fill-line">What did not show a clear pattern:</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Sleep Notes for Appointment</h2>
+        <div class="grid">
+          <div class="line large-line">Sleep or schedule question I want to ask:</div>
+          <div class="line large-line">What I should keep tracking next:</div>
+        </div>
+      </section>
+
+      <div class="footer">
+        Sleep and schedule notes are context for discussion. They do not prove what caused an attack.
+      </div>
+      <div class="page-label">Page 4 of 10 - Sleep and schedule</div>
+    </article>
+
+    <article class="sheet">
+      <header>
+        <div>
+          <h1>Food, Caffeine & Hydration</h1>
+          <div class="subtitle">Use this page without food fear. Food notes are observations, not proof or diet instructions.</div>
+        </div>
+        <div class="top-fields">
+          <div class="field">Date range:</div>
+          <div class="field">Attack days:</div>
+          <div class="field">Caffeine pattern:</div>
+          <div class="field">Hydration notes:</div>
+        </div>
+      </header>
+
+      <section>
+        <h2>Food and Drink Context</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Meals delayed/skipped?</th>
+              <th>Caffeine timing/change</th>
+              <th>Alcohol / hydration notes</th>
+              <th>Migraine notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Review Without Blame</h2>
+        <div class="grid">
+          <div class="line fill-line">Food, caffeine, alcohol, or hydration pattern I want to ask about:</div>
+          <div class="line fill-line">Cravings or appetite changes that may have been early migraine clues:</div>
+          <div class="line fill-line">Things I expected to matter but did not clearly match attacks:</div>
+          <div class="line fill-line">Questions for my healthcare provider:</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Food Notes for Appointment</h2>
+        <div class="grid">
+          <div class="line large-line">What I want to discuss without making restrictive diet changes on my own:</div>
+          <div class="line large-line">What I should keep tracking next:</div>
+        </div>
+      </section>
+
+      <div class="footer">
+        This page is not a diet plan. Do not make diet, medication, or care changes based on this workbook alone.
+      </div>
+      <div class="page-label">Page 5 of 10 - Food, caffeine, hydration</div>
+    </article>
+
+    <article class="sheet">
+      <header>
+        <div>
+          <h1>Stress & Sensory Exposure</h1>
+          <div class="subtitle">Track stress, letdown, and sensory load as context. Some exposure may be unavoidable.</div>
+        </div>
+        <div class="top-fields">
+          <div class="field">Date range:</div>
+          <div class="field">Attack days:</div>
+          <div class="field">Most stressful day:</div>
+          <div class="field">Most sensory-heavy day:</div>
+        </div>
+      </header>
+
+      <section>
+        <h2>Context Notes</h2>
+        <div class="checks three">
+          <div class="check"><span class="box"></span>Acute stress</div>
+          <div class="check"><span class="box"></span>Ongoing stress</div>
+          <div class="check"><span class="box"></span>Letdown after stress</div>
+          <div class="check"><span class="box"></span>Conflict</div>
+          <div class="check"><span class="box"></span>Deadline pressure</div>
+          <div class="check"><span class="box"></span>Overstimulation</div>
+          <div class="check"><span class="box"></span>Bright light/glare</div>
+          <div class="check"><span class="box"></span>Screens/flicker</div>
+          <div class="check"><span class="box"></span>Strong smells</div>
+          <div class="check"><span class="box"></span>Loud sound</div>
+          <div class="check"><span class="box"></span>Crowded space</div>
+          <div class="check"><span class="box"></span>Unavoidable exposure</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>What Happened Around Attacks?</h2>
+        <div class="grid">
+          <div class="line xl-line">Stress, emotional load, or letdown notes:</div>
+          <div class="line xl-line">Light, screen, smell, sound, or crowded-space notes:</div>
+          <div class="line fill-line">What showed up more than once:</div>
+          <div class="line fill-line">What I want help managing or understanding:</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Stress and Sensory Review</h2>
+        <div class="grid">
+          <div class="line xl-line">Situations that showed up more than once:</div>
+          <div class="line xl-line">Situations that are hard to avoid but worth documenting:</div>
+          <div class="line fill-line">Questions or support needs to discuss:</div>
+          <div class="line fill-line">What I should keep tracking next:</div>
+        </div>
+      </section>
+
+      <div class="footer">
+        This page is for pattern notes, not self-blame. Discuss concerns with a qualified healthcare professional.
+      </div>
+      <div class="page-label">Page 6 of 10 - Stress and sensory exposure</div>
+    </article>
+
+    <article class="sheet">
+      <header>
+        <div>
+          <h1>Weather, Environment & Travel</h1>
+          <div class="subtitle">Record environmental context, including things you cannot control, so you can discuss patterns clearly.</div>
+        </div>
+        <div class="top-fields">
+          <div class="field">Date range:</div>
+          <div class="field">Attack days:</div>
+          <div class="field">Location / travel:</div>
+          <div class="field">Environment notes:</div>
+        </div>
+      </header>
+
+      <section>
+        <h2>Environment Context</h2>
+        <div class="checks three">
+          <div class="check"><span class="box"></span>Weather change</div>
+          <div class="check"><span class="box"></span>Pressure change</div>
+          <div class="check"><span class="box"></span>Storms</div>
+          <div class="check"><span class="box"></span>Heat</div>
+          <div class="check"><span class="box"></span>Humidity</div>
+          <div class="check"><span class="box"></span>Cold exposure</div>
+          <div class="check"><span class="box"></span>Smoke/air quality</div>
+          <div class="check"><span class="box"></span>Altitude</div>
+          <div class="check"><span class="box"></span>Travel</div>
+          <div class="check"><span class="box"></span>Indoor environment</div>
+          <div class="check"><span class="box"></span>Outdoor exposure</div>
+          <div class="check"><span class="box"></span>Other</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Weather and Travel Notes</h2>
+        <div class="grid">
+          <div class="line xl-line">What was happening in the environment:</div>
+          <div class="line xl-line">Travel, altitude, commute, or location changes:</div>
+          <div class="line fill-line">Patterns I want to ask about:</div>
+          <div class="line fill-line">Things I cannot control but want documented:</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Environment Review</h2>
+        <div class="grid">
+          <div class="line xl-line">Weather or environment patterns that showed up more than once:</div>
+          <div class="line xl-line">Travel or location notes I want to compare later:</div>
+          <div class="line fill-line">Questions for my provider:</div>
+          <div class="line fill-line">What I should keep tracking next:</div>
+        </div>
+      </section>
+
+      <div class="footer">
+        Environment notes can be useful even when no change is possible. Use them to support a healthcare conversation.
+      </div>
+      <div class="page-label">Page 7 of 10 - Weather and environment</div>
+    </article>
+
+    <article class="sheet">
+      <header>
+        <div>
+          <h1>Cycle & Body Context Notes</h1>
+          <div class="subtitle">Use only what applies. Skip any section that is not relevant to your body or appointment.</div>
+        </div>
+        <div class="top-fields">
+          <div class="field">Date range:</div>
+          <div class="field">Attack days:</div>
+          <div class="field">Relevant cycle/body notes:</div>
+          <div class="field">Questions for provider:</div>
+        </div>
+      </header>
+
+      <section>
+        <h2>Possible Body Context</h2>
+        <div class="checks three">
+          <div class="check"><span class="box"></span>Cycle timing</div>
+          <div class="check"><span class="box"></span>Hormonal timing</div>
+          <div class="check"><span class="box"></span>Perimenopause/menopause notes</div>
+          <div class="check"><span class="box"></span>Illness</div>
+          <div class="check"><span class="box"></span>Neck tension</div>
+          <div class="check"><span class="box"></span>Posture strain</div>
+          <div class="check"><span class="box"></span>Unusual exertion</div>
+          <div class="check"><span class="box"></span>Recovery day</div>
+          <div class="check"><span class="box"></span>Not applicable</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Notes to Review</h2>
+        <div class="grid">
+          <div class="line xl-line">Cycle, hormonal, or body timing notes:</div>
+          <div class="line xl-line">Illness, neck tension, posture, exertion, or recovery notes:</div>
+          <div class="line fill-line">Patterns that may matter:</div>
+          <div class="line fill-line">Questions I want to ask:</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Body Context Review</h2>
+        <div class="grid">
+          <div class="line xl-line">Body context that showed up more than once:</div>
+          <div class="line xl-line">What may be part of migraine starting rather than a cause:</div>
+          <div class="line fill-line">What is not applicable or not clear:</div>
+          <div class="line fill-line">What I should keep tracking next:</div>
+        </div>
+      </section>
+
+      <div class="footer">
+        This page is optional. Discuss hormonal, medication, or care questions with a qualified healthcare professional.
+      </div>
+      <div class="page-label">Page 8 of 10 - Cycle and body context</div>
+    </article>
+
+    <article class="sheet">
+      <header>
+        <div>
+          <h1>Medication, Support & Relief</h1>
+          <div class="subtitle">Record what happened for discussion. Do not change medications or care decisions based on this workbook alone.</div>
+        </div>
+        <div class="top-fields">
+          <div class="field">Date range:</div>
+          <div class="field">Medication list updated:</div>
+          <div class="field">Questions to ask:</div>
+          <div class="field">Access/refill notes:</div>
+        </div>
+      </header>
+
+      <section>
+        <h2>Medication or Support Notes</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Medication/support</th>
+              <th>Time used</th>
+              <th>Relief level</th>
+              <th>Side effects / barriers</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Provider Discussion Notes</h2>
+        <div class="grid">
+          <div class="line fill-line">Questions about timing, frequency, side effects, refills, or access:</div>
+          <div class="line fill-line">What helped, partly helped, did not help, or was hard to use:</div>
+          <div class="line fill-line">If I am concerned about how often I use acute medication, I want to ask:</div>
+          <div class="line fill-line">Non-medication supports I used:</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Relief Pattern Review</h2>
+        <div class="grid">
+          <div class="line large-line">What seemed to help or partly help more than once:</div>
+          <div class="line large-line">Questions about side effects, access, or timing:</div>
+        </div>
+      </section>
+
+      <div class="footer">
+        Always talk with a qualified healthcare professional about medications, supplements, side effects, or care decisions.
+      </div>
+      <div class="page-label">Page 9 of 10 - Medication and relief</div>
+    </article>
+
+    <article class="sheet">
+      <header>
+        <div>
+          <h1>Pattern Review & Discussion</h1>
+          <div class="subtitle">Use this page to summarize what you noticed and what you want help understanding.</div>
+        </div>
+        <div class="top-fields">
+          <div class="field">Tracking period reviewed:</div>
+          <div class="field">Appointment date:</div>
+          <div class="field">Provider:</div>
+          <div class="field">Prepared on:</div>
+        </div>
+      </header>
+
+      <section>
+        <h2>Pattern Review</h2>
+        <div class="grid">
+          <div class="line xl-line">Possible context that showed up more than once:</div>
+          <div class="line xl-line">Things I expected to matter but did not clearly match attacks:</div>
+          <div class="line xl-line">Things that may be early migraine symptoms rather than causes:</div>
+          <div class="line xl-line">No clear pattern notes:</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Doctor Discussion Page</h2>
+        <div class="line large-line">What I want help understanding:</div>
+        <div class="line large-line">Questions I want to ask:</div>
+        <div class="line large-line">What I should track before the next visit:</div>
+        <div class="line large-line">Notes from appointment or follow-up plan:</div>
+      </section>
+
+      <div class="footer">
+        This printable is a personal tracking and organization tool. It is not medical advice, diagnosis, or treatment. If symptoms feel new, sudden, severe, or concerning, contact a qualified healthcare professional or emergency services.
+      </div>
+      <div class="page-label">Page 10 of 10 - Pattern review and discussion</div>
+    </article>
+  </main>
+</body>
+</html>
