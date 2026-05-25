@@ -145,13 +145,17 @@ Seller-facing files such as listing copy, mockups, manifests, and readiness note
 
 ## Recommended Next Step
 
-Review the prepared Pinterest pin asset and copy before any manual posting.
+Create one manual Pinterest post using the approved pin image and copy, then record the Pin URL in the traffic log.
 
 Pinterest prep files:
 
 - `chronic-product-lab/bundle/pinterest/pin-1000x1500.png`
 - `chronic-product-lab/bundle/pinterest/pin-copy.md`
 - `chronic-product-lab/bundle/pinterest/traffic-test-log.md`
+
+Pinterest asset status:
+
+- User reviewed `pin-1000x1500.png` and said to keep it.
 
 Do not use PaperclipAI or start external promotion unless the user explicitly approves that phase.
 

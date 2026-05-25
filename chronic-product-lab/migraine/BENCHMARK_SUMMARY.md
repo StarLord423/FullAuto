@@ -83,4 +83,4 @@ Review:
 chronic-product-lab/bundle/
 ```
 
-Next task is reviewing the prepared Pinterest pin asset and copy. Do not post, use PaperclipAI, or start broader external promotion until the user explicitly approves that phase.
+Next task is one manual Pinterest post using the approved pin image and copy. Do not use PaperclipAI or start broader external promotion until the user explicitly approves that phase.

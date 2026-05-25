@@ -14,7 +14,9 @@ Prepare one small, supervised Pinterest traffic test for the live Gumroad migrai
 
 Local prep complete. No Pinterest post has been made yet.
 
-The user asked to work one step at a time. Next step is for the user to review `pin-1000x1500.png` and approve or request changes before any posting.
+The user reviewed `pin-1000x1500.png` and said to keep it.
+
+Next step is one manual Pinterest post using the approved image and `pin-copy.md`.
 
 ## Guardrails
 

@@ -4,7 +4,7 @@
 
 Pinterest traffic test is prepared locally but not posted yet.
 
-Pin image and copy are ready for user review.
+Pin image and copy are approved for one manual Pinterest post.
 
 ## Product
 
@@ -40,7 +40,7 @@ Record before posting:
 - Gumroad views:
 - Gumroad sales:
 - Gumroad wishlists:
-- Notes:
+- Notes: Pin image approved by user.
 
 ## 7-Day Check
 
