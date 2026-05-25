@@ -66,6 +66,7 @@ Completed after this review:
 - Gumroad draft process saved at `gumroad-draft-playbook.md`.
 - Gumroad product published at `https://3010107719883.gumroad.com/l/migraine-printable-bundle`.
 - User reviewed the live page after publishing and said it all looks great.
+- Gumroad category/tags were added, ratings display is enabled, and adult-only content is off.
 
 ## Safety Notes
 
@@ -93,7 +94,7 @@ Choose the next post-publish action.
 
 Possible next local-only tasks:
 
-1. Decide whether to add Gumroad tags/category.
-2. Leave external promotion paused unless separately approved.
+1. Leave external promotion paused.
+2. Choose a small supervised traffic test only if separately approved.
 
 Do not use PaperclipAI or start external promotion unless the user explicitly approves that phase.

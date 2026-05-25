@@ -114,6 +114,10 @@ Gumroad status:
 - Product was published on Gumroad.
 - Live URL: `https://3010107719883.gumroad.com/l/migraine-printable-bundle`
 - User reviewed the live page after publishing and said it all looks great.
+- Gumroad category is set to `Other`.
+- Gumroad tags are `migraine tracker`, `migraine printable`, `chronic migraine`, `headache diary`, and `doctor visit prep`.
+- Product ratings display is enabled.
+- Adult-only content toggle is off.
 - Gumroad draft process is saved in `chronic-product-lab/bundle/gumroad-draft-playbook.md`.
 
 Final upload package:
@@ -141,7 +145,7 @@ Seller-facing files such as listing copy, mockups, manifests, and readiness note
 
 ## Recommended Next Step
 
-Decide whether to add Gumroad tags/category or leave promotion paused.
+Leave external promotion paused or choose a small supervised traffic test.
 
 Do not use PaperclipAI or start external promotion unless the user explicitly approves that phase.
 

@@ -26,6 +26,10 @@ Manual Gumroad entry progress:
 - User clicked `Publish and continue`, but Gumroad blocked publishing because at least one payment method must be connected first.
 - User later reported Gumroad said payment setup was all set.
 - Product was published on Gumroad.
+- Gumroad category is set to `Other`.
+- Gumroad tags are `migraine tracker`, `migraine printable`, `chronic migraine`, `headache diary`, and `doctor visit prep`.
+- Product ratings display is enabled.
+- Adult-only content toggle is off.
 
 ## Product Type
 
