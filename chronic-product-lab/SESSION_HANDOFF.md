@@ -145,7 +145,13 @@ Seller-facing files such as listing copy, mockups, manifests, and readiness note
 
 ## Recommended Next Step
 
-Leave external promotion paused or choose a small supervised traffic test.
+Review the prepared Pinterest pin asset and copy before any manual posting.
+
+Pinterest prep files:
+
+- `chronic-product-lab/bundle/pinterest/pin-1000x1500.png`
+- `chronic-product-lab/bundle/pinterest/pin-copy.md`
+- `chronic-product-lab/bundle/pinterest/traffic-test-log.md`
 
 Do not use PaperclipAI or start external promotion unless the user explicitly approves that phase.
 

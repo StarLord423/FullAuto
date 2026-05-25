@@ -83,4 +83,4 @@ Review:
 chronic-product-lab/bundle/
 ```
 
-Next task is leaving promotion paused or choosing a small supervised traffic test. Do not use PaperclipAI or start external promotion until the user explicitly approves that phase.
+Next task is reviewing the prepared Pinterest pin asset and copy. Do not post, use PaperclipAI, or start broader external promotion until the user explicitly approves that phase.
