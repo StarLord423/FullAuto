@@ -132,13 +132,14 @@ For the current migraine bundle:
 - User previewed the product page and approved the visible preview.
 - User clicked `Publish and continue`, but Gumroad blocked publishing because at least one payment method must be connected first.
 - User later reported Gumroad said payment setup was all set.
-- Product is not live.
+- Product was published on Gumroad.
+- Live URL: `https://3010107719883.gumroad.com/l/migraine-printable-bundle`
 
 ## Payment Provider Step
 
-The next human-only step is connecting a Gumroad payment method.
+Payment setup was completed by the human.
 
-After payment setup, return to the saved draft and run one final preview check before publishing.
+The product was then published from Gumroad.
 
 ## Final Pre-Publish Checklist
 

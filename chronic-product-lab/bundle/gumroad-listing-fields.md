@@ -2,9 +2,13 @@
 
 ## Status
 
-Drafted for manual entry on Gumroad.
+Published on Gumroad.
 
-Do not publish until the user explicitly approves the final live listing.
+Live URL:
+
+```text
+https://3010107719883.gumroad.com/l/migraine-printable-bundle
+```
 
 Manual Gumroad entry progress:
 
@@ -21,7 +25,7 @@ Manual Gumroad entry progress:
 - User previewed the product page and approved the visible preview.
 - User clicked `Publish and continue`, but Gumroad blocked publishing because at least one payment method must be connected first.
 - User later reported Gumroad said payment setup was all set.
-- Product has not been published.
+- Product was published on Gumroad.
 
 ## Product Type
 

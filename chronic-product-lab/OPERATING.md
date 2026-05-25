@@ -22,7 +22,13 @@ Current bundle:
 - Includes `bundle/final-upload/migraine-printable-bundle.zip` as the local buyer-facing upload package.
 - User reviewed the mockups and said they liked them.
 
-No marketplace publishing, PaperclipAI integration, account creation, or external promotion has been approved.
+Gumroad product is live:
+
+```text
+https://3010107719883.gumroad.com/l/migraine-printable-bundle
+```
+
+No PaperclipAI integration or external promotion has been approved.
 
 ## Product Build Loop
 

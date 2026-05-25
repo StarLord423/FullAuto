@@ -23,8 +23,9 @@ Bundle status:
 - Marketplace-readiness review created at `bundle/marketplace-readiness-review.md`.
 - Buyer-facing upload ZIP created at `bundle/final-upload/migraine-printable-bundle.zip`.
 - Gumroad listing fields drafted at `bundle/gumroad-listing-fields.md`.
+- Gumroad product published at `https://3010107719883.gumroad.com/l/migraine-printable-bundle`.
 - User reviewed the mockups and said they liked them.
-- No marketplace publishing, PaperclipAI integration, account creation, or external promotion has been approved.
+- No PaperclipAI integration or external promotion has been approved.
 
 ## Workflow
 

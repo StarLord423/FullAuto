@@ -111,7 +111,8 @@ Gumroad status:
 - User previewed the product page and approved the visible preview.
 - User clicked `Publish and continue`, but Gumroad blocked publishing because at least one payment method must be connected first.
 - User later reported Gumroad said payment setup was all set.
-- Product should remain unpublished until the user explicitly approves the final live listing.
+- Product was published on Gumroad.
+- Live URL: `https://3010107719883.gumroad.com/l/migraine-printable-bundle`
 - Gumroad draft process is saved in `chronic-product-lab/bundle/gumroad-draft-playbook.md`.
 
 Final upload package:
@@ -131,17 +132,17 @@ Seller-facing files such as listing copy, mockups, manifests, and readiness note
 
 - No medical diagnosis, treatment, prevention, cure, or outcome claims.
 - No fake doctor approval or credentials.
-- No marketplace publishing.
+- Gumroad publishing is complete for the first bundle.
 - No PaperclipAI integration.
-- No account creation.
+- No external promotion has been approved.
 - Keep all buyer-facing language migraine-specific and medically cautious.
 - Use "possible context" and "patterns" instead of guaranteed trigger claims.
 
 ## Recommended Next Step
 
-Return to the saved Gumroad draft for one final preview check before publishing.
+Do a post-publish sanity check of the live Gumroad page, then decide whether to add tags/category or leave promotion paused.
 
-Do not publish anything or use PaperclipAI unless the user explicitly approves that phase.
+Do not use PaperclipAI or start external promotion unless the user explicitly approves that phase.
 
 ## Standing Completion Rule
 
@@ -152,5 +153,5 @@ After every completed task, update relevant Markdown files before stopping. Keep
 ```text
 Read chronic-product-lab/SESSION_HANDOFF.md and chronic-product-lab/OPERATING.md.
 Continue from the current local migraine bundle package.
-Do not publish anything, create accounts, or use PaperclipAI.
+Do not use PaperclipAI or start external promotion.
 ```

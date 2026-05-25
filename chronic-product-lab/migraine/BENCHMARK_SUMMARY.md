@@ -2,9 +2,15 @@
 
 ## Status
 
-The first local migraine mini-catalog is validated, packaged as a local bundle, and has completed preview images.
+The first local migraine mini-catalog is validated, packaged as a local bundle, has completed preview images, and is live on Gumroad.
 
-No marketplace publishing, PaperclipAI integration, account creation, or external promotion has been approved.
+Gumroad listing:
+
+```text
+https://3010107719883.gumroad.com/l/migraine-printable-bundle
+```
+
+No PaperclipAI integration or external promotion has been approved.
 
 ## Validated Products
 
@@ -73,4 +79,4 @@ Review:
 chronic-product-lab/bundle/
 ```
 
-Next task is manually filling the Gumroad product page from `bundle/gumroad-listing-fields.md`, then stopping before publishing for final review. Do not publish the bundle until the user explicitly approves a marketplace test.
+Next task is a post-publish sanity check of the live Gumroad page. Do not use PaperclipAI or start external promotion until the user explicitly approves that phase.
