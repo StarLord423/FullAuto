@@ -113,6 +113,7 @@ Gumroad status:
 - User later reported Gumroad said payment setup was all set.
 - Product was published on Gumroad.
 - Live URL: `https://3010107719883.gumroad.com/l/migraine-printable-bundle`
+- User reviewed the live page after publishing and said it all looks great.
 - Gumroad draft process is saved in `chronic-product-lab/bundle/gumroad-draft-playbook.md`.
 
 Final upload package:
@@ -140,7 +141,7 @@ Seller-facing files such as listing copy, mockups, manifests, and readiness note
 
 ## Recommended Next Step
 
-Do a post-publish sanity check of the live Gumroad page, then decide whether to add tags/category or leave promotion paused.
+Decide whether to add Gumroad tags/category or leave promotion paused.
 
 Do not use PaperclipAI or start external promotion unless the user explicitly approves that phase.
 

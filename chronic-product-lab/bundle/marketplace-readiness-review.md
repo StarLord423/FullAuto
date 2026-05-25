@@ -65,6 +65,7 @@ Completed after this review:
 - User later reported Gumroad said payment setup was all set.
 - Gumroad draft process saved at `gumroad-draft-playbook.md`.
 - Gumroad product published at `https://3010107719883.gumroad.com/l/migraine-printable-bundle`.
+- User reviewed the live page after publishing and said it all looks great.
 
 ## Safety Notes
 
@@ -92,7 +93,7 @@ Choose the next post-publish action.
 
 Possible next local-only tasks:
 
-1. Do a post-publish sanity check of the live Gumroad page.
-2. Decide whether to add tags/category or leave promotion paused.
+1. Decide whether to add Gumroad tags/category.
+2. Leave external promotion paused unless separately approved.
 
 Do not use PaperclipAI or start external promotion unless the user explicitly approves that phase.
