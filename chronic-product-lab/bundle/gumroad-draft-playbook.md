@@ -106,11 +106,11 @@ Use:
 chronic-product-lab/bundle/gumroad-listing-fields.md
 ```
 
-Current draft values:
+Current live values:
 
 - Product name: `Migraine Printable Bundle: Tracker, Doctor Visit Prep, and Pattern Workbook`
 - URL slug: `migraine-printable-bundle`
-- Price: `$17`
+- Price: `$12`
 - Refund policy: 7 days
 - Buyer ZIP: `chronic-product-lab/bundle/final-upload/migraine-printable-bundle.zip`
 
@@ -124,7 +124,7 @@ For the current migraine bundle:
 - Gumroad horizontal cover uploaded.
 - Square thumbnail uploaded.
 - Summary entered.
-- Price set to `$17`.
+- Price was initially set to `$17`, then changed to `$12` for the first traffic test.
 - Seven-day refund policy entered.
 - Buyer ZIP uploaded in the Content tab.
 - Receipt button text set to `View content`.

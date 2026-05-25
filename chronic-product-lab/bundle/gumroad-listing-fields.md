@@ -18,7 +18,7 @@ Manual Gumroad entry progress:
 - Gumroad horizontal cover uploaded.
 - Square thumbnail uploaded.
 - Summary entered.
-- Price set to `$17`.
+- Price was initially set to `$17`.
 - Seven-day refund policy entered.
 - Buyer ZIP uploaded in the Content tab.
 - Gumroad showed `Saved!` after saving changes.
@@ -30,6 +30,7 @@ Manual Gumroad entry progress:
 - Gumroad tags are `migraine tracker`, `migraine printable`, `chronic migraine`, `headache diary`, and `doctor visit prep`.
 - Product ratings display is enabled.
 - Adult-only content toggle is off.
+- User changed the live price to `$12` for the first traffic test.
 
 ## Product Type
 
@@ -47,16 +48,15 @@ migraine-printable-bundle
 
 ## Price
 
-Recommended sales-test price:
+Current live sales-test price:
 
 ```text
-$17
+$12
 ```
 
 Optional alternate test prices:
 
-- Conservative: `$12`
-- Midpoint: `$17`
+- Later midpoint test: `$17`
 - Premium test: `$24`
 
 ## Summary

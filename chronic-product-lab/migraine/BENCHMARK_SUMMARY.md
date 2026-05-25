@@ -14,6 +14,8 @@ The user reviewed the live page after publishing and said it all looks great.
 
 Gumroad tags were added, ratings display is enabled, and adult-only content is off.
 
+Live price was changed to `$12` for the first traffic test.
+
 No PaperclipAI integration or external promotion has been approved.
 
 ## Validated Products

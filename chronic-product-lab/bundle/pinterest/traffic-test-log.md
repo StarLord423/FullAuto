@@ -16,6 +16,12 @@ Live Gumroad URL:
 https://3010107719883.gumroad.com/l/migraine-printable-bundle
 ```
 
+Current live price:
+
+```text
+$12
+```
+
 ## Test Asset
 
 Planned pin image:

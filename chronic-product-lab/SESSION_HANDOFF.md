@@ -105,8 +105,8 @@ Gumroad status:
 
 - User created a Gumroad account and is on `https://gumroad.com/products/new`.
 - Gumroad listing fields are drafted locally at `chronic-product-lab/bundle/gumroad-listing-fields.md`.
-- Recommended starting price in the draft: `$17`.
-- Manual Gumroad draft has product name, description, URL slug, cover, thumbnail, summary, $17 price, seven-day refund policy, and buyer ZIP uploaded.
+- Recommended starting price in the draft was `$17`.
+- Manual Gumroad draft has product name, description, URL slug, cover, thumbnail, summary, seven-day refund policy, and buyer ZIP uploaded.
 - Gumroad showed `Saved!` after saving changes.
 - User previewed the product page and approved the visible preview.
 - User clicked `Publish and continue`, but Gumroad blocked publishing because at least one payment method must be connected first.
@@ -118,6 +118,7 @@ Gumroad status:
 - Gumroad tags are `migraine tracker`, `migraine printable`, `chronic migraine`, `headache diary`, and `doctor visit prep`.
 - Product ratings display is enabled.
 - Adult-only content toggle is off.
+- User changed the live price to `$12` for the first traffic test.
 - Gumroad draft process is saved in `chronic-product-lab/bundle/gumroad-draft-playbook.md`.
 
 Final upload package:

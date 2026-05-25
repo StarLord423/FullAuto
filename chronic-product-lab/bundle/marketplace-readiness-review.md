@@ -67,6 +67,7 @@ Completed after this review:
 - Gumroad product published at `https://3010107719883.gumroad.com/l/migraine-printable-bundle`.
 - User reviewed the live page after publishing and said it all looks great.
 - Gumroad category/tags were added, ratings display is enabled, and adult-only content is off.
+- User changed the live price to `$12` for the first traffic test.
 
 ## Safety Notes
 
